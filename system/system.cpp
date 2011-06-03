@@ -70,7 +70,7 @@ void SystemMgr::LoadScriptTexts()
 
     if (pResult)
     {
-        barGoLink bar(pResult->GetRowCount());
+        BarGoLink bar(pResult->GetRowCount());
         uint32 uiCount = 0;
 
         do
@@ -114,7 +114,7 @@ void SystemMgr::LoadScriptTexts()
     }
     else
     {
-        barGoLink bar(1);
+        BarGoLink bar(1);
         bar.step();
         outstring_log("");
         outstring_log(">> Loaded 0 additional Script Texts data. DB table `script_texts` is empty.");
@@ -132,7 +132,7 @@ void SystemMgr::LoadScriptTextsCustom()
 
     if (pResult)
     {
-        barGoLink bar(pResult->GetRowCount());
+        BarGoLink bar(pResult->GetRowCount());
         uint32 uiCount = 0;
 
         do
@@ -176,7 +176,7 @@ void SystemMgr::LoadScriptTextsCustom()
     }
     else
     {
-        barGoLink bar(1);
+        BarGoLink bar(1);
         bar.step();
         outstring_log("");
         outstring_log(">> Loaded 0 additional Custom Texts data. DB table `custom_texts` is empty.");
@@ -210,7 +210,7 @@ void SystemMgr::LoadScriptWaypoints()
 
     if (pResult)
     {
-        barGoLink bar(pResult->GetRowCount());
+        BarGoLink bar(pResult->GetRowCount());
         uint32 uiNodeCount = 0;
 
         do
@@ -249,7 +249,7 @@ void SystemMgr::LoadScriptWaypoints()
     }
     else
     {
-        barGoLink bar(1);
+        BarGoLink bar(1);
         bar.step();
         outstring_log("");
         outstring_log(">> Loaded 0 Script Waypoints. DB table `script_waypoint` is empty.");
